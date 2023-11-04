@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+
+<h1 class="alert alert-info">Role Management</h1>
+<div class="row">
+    <h4 class="text-primary text-center">@ViewBag.msg</h4>
+</div>
+<div class="row">
+    <div class="col-6">
+        <form asp-action="CreateRole" asp-controller="Role" method="post">
+            <label class="col-form-label">Role Name</label>
+            <input type="text" name="userrole" value="" class="form-control" placeholder="Please type a role name..."/>
+            <button class="btn btn-success mt-2" type="submit">Create Role</button>
+        </form>
+    </div>
+</div>
